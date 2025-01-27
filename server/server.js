@@ -11,8 +11,13 @@ console.log(__dirname)
 
 // Route to handle search queries
 
+app.get('/' ,(req,res) => {
+	res.send("Server is running!)
+})
+
+
 app.get('/test', (req,res) => {
-	res.json("Prasiddha noob")
+	res.send("Prasiddha noob")
 })
 
 app.get('/home/search', (req, res) => {
