@@ -9,6 +9,11 @@ app.use(express.static(path.join(__dirname, '../assets')));
 // app.use(express.static(path.join(__dirname, '../resources')));
 
 // Route to handle search queries
+
+app.get('/test', (req,res) => {
+	res.json("Prasiddha noob")
+})
+
 app.get('/home/search', (req, res) => {
 	const searchQuery = req.query.item;
 	const basePath = path.join(__dirname, '../resources/');
