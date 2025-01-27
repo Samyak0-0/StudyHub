@@ -1,5 +1,16 @@
 {
+  "name": "vercel-express-app",
+  "version": "1.0.0",
+  "description": "An Express.js app deployed on Vercel.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "vercel dev",  // Local development
+    "start": "node server.js" // Useful for local testing
+  },
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=14.x" // Match Node.js version supported by Vercel
   }
 }
