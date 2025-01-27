@@ -4,8 +4,9 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../public')));
-app.use(express.static(path.join(__dirname, '../assets')));
+// app.use(express.static(path.join(__dirname, '../public')));
+// app.use(express.static(path.join(__dirname, '../assets')));
+console.log(__dirname)
 // app.use(express.static(path.join(__dirname, '../resources')));
 
 // Route to handle search queries
